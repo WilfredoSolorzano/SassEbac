@@ -1,0 +1,15 @@
+{
+  "name": "sass-tarefa",
+  "version": "1.0.0",
+  "description": "converção do arquivo",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass source/main.scss build/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wilfredo solorzano",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}

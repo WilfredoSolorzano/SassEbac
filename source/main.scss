@@ -1,0 +1,17 @@
+
+@use './config/reset.scss';
+@use './config/variaveis.scss';
+
+@use './config/header.scss';
+@use './config/products.scss';
+@use './config/responsive.scss';
+
+
+body {
+    background-color: variaveis.$background-color;
+}
+
+
+section {
+    padding: 56px 0;
+}

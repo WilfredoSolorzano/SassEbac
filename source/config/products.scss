@@ -1,0 +1,55 @@
+
+@use './variaveis.scss';
+
+@function pixelParaEm($valorEnPixeles, $contextoEnPixeles: 16) {
+    @return ($valorEnPixeles / $contextoEnPixeles); 
+}
+
+@mixin buttonElement() {
+    padding: 8px 0;
+    border-radius: pixelParaEm(8px);
+    margin-top: 8px;
+}
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+
+    .product-item img {
+        width: 100%;
+        border-radius: pixelParaEm(120px);
+    }
+
+    .product-button {
+        @include buttonElement();
+        display: block;
+        background-color: variaveis.$secondary-color;
+        color: variaveis.$background-color;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            background-color: variaveis.$secondary-color-hover;
+        }
+    }
+}
+
+nav {
+    ul.menu {
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.container {
+    ul.products {
+        li {
+            list-style: none;
+        }
+    }
+}
